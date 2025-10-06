@@ -1,0 +1,45 @@
+/* Silueta negra tipo sombra Pokémon */
+.silueta {
+  filter: brightness(0) saturate(100%) contrast(200%);
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.silueta:hover {
+  transform: scale(1.1);
+  filter: brightness(0.2);
+  border-color: #ffc107;
+}
+
+.silueta.seleccionada {
+  border-color: #0d6efd;
+  box-shadow: 0 0 15px #0d6efd;
+}
+
+#enemigoTeam img,
+#siluetas img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+body {
+  background: linear-gradient(to bottom, #1b1b2f, #16213e);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.silueta {
+  filter: brightness(0) contrast(300%);
+  /* ... */
+}
